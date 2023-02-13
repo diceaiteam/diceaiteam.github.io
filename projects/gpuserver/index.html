@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Project2 - AI/ML@DICE</title>
+    <title>GPU Server Usage - AI/ML@DICE</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Project2";
+        var mkdocs_page_name = "GPU Server Usage";
         var mkdocs_page_input_path = "projects\\gpuserver.md";
         var mkdocs_page_url = null;
       </script>
@@ -50,9 +50,13 @@
               </ul>
               <p class="caption"><span class="caption-text">Resources</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Project2</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">GPU Server Usage</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#parts">Parts</a>
+    <li class="toctree-l2"><a class="reference internal" href="#vastai">Vast.ai</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a>
+    </li>
+        </ul>
     </li>
     </ul>
                   </li>
@@ -77,7 +81,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>Resources &raquo;</li>
-      <li>Project2</li>
+      <li>GPU Server Usage</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -86,9 +90,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="project2">Project2</h1>
-<p>The historic or ongoing projects</p>
-<h2 id="parts">Parts</h2>
+                <h1 id="gpu-server-usage">GPU Server Usage</h1>
+<p>This page gives brief instruction on how we use remote computation resources when colab is not enough.</p>
+<h2 id="vastai">Vast.ai</h2>
+<p><a href="https://vast.ai/">Vast.ai</a> is a popular gpu renting platform which provides capable gpu servers. The usage is very straghtforward and it provides detailed documentation. 
+<img alt="vast.ai website" src="../../assets/pics/vastai/index.jpg" title="vast.ai website" /></p>
+<h3 id="usage">Usage</h3>
+<ol>
+<li>log into the console </li>
+<li>Select instance and rent 
+<img alt="rent instance" src="../../assets/pics/vastai/console.jpg" title="vast.ai console" /></li>
+<li>To run the code in Jupyter terminal, start the terminal from Instances page
+<img alt="rent instance" src="../../assets/pics/vastai/instances.jpg" title="vast.ai instances" /></li>
+<li>To use big datasets and large models in vastai, we can upload them first to the google drive and download them from vastai commandlines, as compared to local uploading, downloading from gdrive is much faster.</li>
+<li>For more detailed use, check their <a href="https://vast.ai/docs/overview/basics">documents</a></li>
+</ol>
               
             </div>
           </div><footer>

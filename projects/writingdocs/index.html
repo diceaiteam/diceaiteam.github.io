@@ -57,14 +57,14 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#build-the-site">build the site</a>
+    <li class="toctree-l2"><a class="reference internal" href="#build-the-site-and-publish">build the site and publish</a>
     </li>
     </ul>
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Resources</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../gpuserver/">Project2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../gpuserver/">GPU Server Usage</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Projects</span></p>
@@ -111,16 +111,23 @@
 </ol>
 <h3 id="commit-remotely">Commit remotely</h3>
 <ol>
-<li>Make sure local git has access to remote repo;</li>
+<li>Make sure local git has access to remote repo (a easy way would be to add collaborator);</li>
 <li><code>git push origin main</code> pushes to origin's main branch.</li>
 </ol>
-<h2 id="build-the-site">build the site</h2>
+<h2 id="build-the-site-and-publish">build the site and publish</h2>
+<ol>
+<li>Use <code>mkdocs build</code> to build the documentation. The output dir can be specified with -d option;</li>
+<li>Make sure the built dir is in gh-pages branch which is the default branch of publishing page;</li>
+<li>Connect the build site with <a href="https://github.com/diceaiteam/diceaiteam.github.io">remote repo</a> if not already done;</li>
+<li>Push with overwrite: <code>git push -f origin gh-pages</code>;</li>
+<li>Check <a href="https://github.com/diceaiteam/diceaiteam.github.io/actions">Actions</a> of the github project and make sure the deployment is successful.</li>
+</ol>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../gpuserver/" class="btn btn-neutral float-right" title="Project2">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../gpuserver/" class="btn btn-neutral float-right" title="GPU Server Usage">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
