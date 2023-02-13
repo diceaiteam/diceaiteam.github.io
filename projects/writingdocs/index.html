@@ -47,10 +47,10 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">Write the Doc</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#cloning-to-local">Cloning to local</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#synchronize-source-code-remotely">Synchronize source code remotely</a>
+    <li class="toctree-l2"><a class="reference internal" href="#synchronize-source-code-from-remote-repo">Synchronize source code from remote repo</a>
         <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#cloning-to-local">Cloning to local</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#commit-locally">Commit Locally</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#commit-remotely">Commit remotely</a>
@@ -97,13 +97,13 @@
               
                 <h1 id="writing-and-publishing-on-our-github-pages-doc">Writing and publishing on our github pages doc</h1>
 <p>A brief guide to building the documentation tool from github, writing and publishing on the github pages</p>
-<h2 id="cloning-to-local">Cloning to local</h2>
+<h2 id="synchronize-source-code-from-remote-repo">Synchronize source code from remote repo</h2>
+<h3 id="cloning-to-local">Cloning to local</h3>
 <ol>
 <li>Cloning the source code repo from <a href="https://github.com/diceaiteam/teamdocs">our github repo</a> using git;</li>
 <li>In the local cloned project, edit the pages;</li>
 <li>Preview content in local server using <code>mkdocs serve</code></li>
 </ol>
-<h2 id="synchronize-source-code-remotely">Synchronize source code remotely</h2>
 <h3 id="commit-locally">Commit Locally</h3>
 <ol>
 <li><code>git add</code> to add the changes to git</li>
@@ -111,8 +111,8 @@
 </ol>
 <h3 id="commit-remotely">Commit remotely</h3>
 <ol>
-<li>Make sure local git has access to remote repo (a easy way would be to add collaborator);</li>
-<li><code>git push origin main</code> pushes to origin's main branch.</li>
+<li>Make sure local git has access to remote repo (an easy way would be to add collaborator);</li>
+<li>Use <code>git push origin main</code> to push to origin's main branch.</li>
 </ol>
 <h2 id="build-the-site-and-publish">build the site and publish</h2>
 <ol>
